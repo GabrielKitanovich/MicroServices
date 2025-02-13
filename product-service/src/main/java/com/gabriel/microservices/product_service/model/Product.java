@@ -1,5 +1,6 @@
 package com.gabriel.microservices.product_service.model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AllArgsConstructor;
@@ -15,6 +16,7 @@ import java.math.BigDecimal;
 @Builder
 @Data
 public class Product {
+    @Id
     private String id;
     private String name;
     private String description;
